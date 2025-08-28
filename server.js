@@ -28,7 +28,8 @@ const io = socketio(server, {
     origin: [
       'http://localhost:5173',
       'http://localhost:5050',
-      'https://frontendtaskmanagement-rose.vercel.app'
+      'https://frontendtaskmanagement-rose.vercel.app',
+      'https://task.hotncool.qa'
     ],
     methods: ['GET', 'POST', 'PUT', 'PATCH', 'DELETE', 'OPTIONS'],
     credentials: true,
@@ -215,7 +216,8 @@ app.use('/uploads', express.static(path.join(__dirname, 'uploads')));
 const allowedOrigins = [
   'http://localhost:5173',
   'http://localhost:5050',
-  'https://frontendtaskmanagement-rose.vercel.app'
+  'https://frontendtaskmanagement-rose.vercel.app',
+  'https://task.hotncool.qa'
 ];
 
 app.use(cors({
